@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO PESO</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header><h1>CALCULE SU PESO IDEAL</h1></header>
+    <form>
+        <div class="grid-container">
+            <div>
+                <label>ALTURA</label><br>
+                <input type="number" name="altura" value="cm" class="altura1" required placeholder="centimetros" min="120" max="220" step="10">
+            </div>
+            <div>
+                <label>EDAD</label><br>
+                <input type="number" id="points" name="edad" min="0" max="100" step="10" required placeholder="años">
+            </div>
+        
+            <div>
+                <label>CIRCUNFERENCA MANO DERECHA</label><br>
+                <input type="number" name="circunferencia" value="cm" required placeholder="centimetros" min="10" max="15">
+            </div>
+            <div>
+                <label>SEXO</label><br>
+                <input type="radio" id="sexm" name="fav_language" value="m">
+                <label for="sexm">MASCULINO</label>
+                <input type="radio" id="sexf" name="fav_language" value="f">
+                <label for="sexf">FEMENINO</label>
+            </div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+<footer>
+    <p>Desafio Peso</p>
+    <p>Joel Andres Flores Santalla</p>
+</footer>
+</html>
